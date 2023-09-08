@@ -1,0 +1,404 @@
+@font-face {
+    font-family: circular;
+    src: url(../fonts/CircularStd-Medium.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    color: white;
+    /* border: 1px dashed red; */
+    font-family: circular;
+    color: #a7a7a7;
+}
+
+::-webkit-scrollbar {
+    background-color: transparent;
+    max-height: 50%;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #a7a7a751;
+
+}
+
+body {
+    width: 100vw;
+}
+
+.main-body {
+    display: flex;
+    background-color: black;
+    max-width: 100vw;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+
+.navigation-container {
+    width: 100%;
+    height: fit-content;
+    background-color: #121212;
+    margin: 0.5rem;
+    margin-right: 0rem;
+    border-radius: 0.5rem;
+    padding: 0.8rem;
+}
+
+.navigation {
+
+    list-style-type: none;
+}
+
+.nav-elements {
+    padding: 0.8rem;
+    height: max-content;
+
+}
+
+
+
+.library {
+    margin: 0.5rem;
+    margin-top: 0rem;
+    margin-right: 0rem;
+    width: 100%;
+    height: 45rem;
+    background-color: #121212;
+    border-radius: 0.5rem;
+}
+
+
+.nav-text {
+    padding-left: 1rem;
+    font-weight: bold;
+    height: 100%;
+    padding-top: 0.2rem;
+}
+
+.link-ref {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    align-items: center;
+}
+
+
+
+.lib-top {
+    display: flex;
+    max-width: 100%;
+    width: 100vw;
+    height: max-content;
+    padding-top: 0.3rem;
+    justify-content: space-between;
+}
+
+.lib-button {
+    display: flex;
+    background-color: #33333300;
+    width: fit-content;
+    height: fit-content;
+    border: none;
+    font-weight: bold;
+    font-size: medium;
+    margin: 0.68rem;
+    padding: 0.2rem;
+}
+
+.plus-button:hover, .arrow-button:hover {
+    background-color: #2a2a2a87;
+    border-radius: 2rem;
+}
+
+.lib-icon {
+    padding-right: 1rem;
+}
+
+.yours-lib {
+    padding-right: 7rem;
+}
+
+
+.func-button {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    width: max-content;
+}
+
+.func-container {
+    margin-right: 1rem;
+}
+
+
+
+.left-page {
+    height: max-content;
+    width: 26rem;
+    margin-right: 0.5rem;
+}
+
+.lib-filter {
+    display: flex;
+    margin-left: 1rem;
+    margin-top: 0.3rem;
+    margin-bottom: 0.6rem;
+}
+
+.bttn-filter {
+    width: 4.2rem;
+    height: 1.8rem;
+    border-style: none;
+    border-radius: 0.8rem;
+    background-color: #FFFFFF12;
+    margin-right: 0.5vw;
+    color: white;
+}
+
+.bttn-filter:hover {
+    background-color: #ffffff1a;
+}
+
+.search {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+
+}
+
+.search-bttn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    background-color: #33333300;
+    border-style: none;
+    border-radius: 2rem;
+}
+
+.search-bttn:hover {
+    background-color: #ffffff1a;
+}
+
+
+
+.recent {
+    display: flex;
+    align-items: center;
+}
+
+.recent-text {
+    padding-right: 0.3rem;
+}
+
+.recent-bttn {
+    display: flex;
+    background-color: #33333300;
+    border-style: none;
+    flex-shrink: 0;
+}
+
+.liked-songs {
+    display: flex;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0.2rem;
+}
+
+.playlist {
+    display: flex;
+    flex-direction: row;
+    height: max-content;
+}
+
+.playlist-name {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0.7rem;
+    color: white;
+    align-items: flex-start;
+    font-size: 1rem;
+}
+
+.playlist-description {
+    font-size: small;
+    padding-top: 0.4rem;
+}
+
+.fixed-icon {
+    margin-right: 0.3rem;
+}
+
+.left-overflow {
+    overflow-y: scroll;
+    max-height: 100%;
+    height: 38.3rem;
+}
+
+.playlist-albuns {
+    display: flex;
+    flex-direction: column;
+    /* gap: 1rem; */
+}
+
+.playlist-button {
+    margin: 0rem 0.5rem;
+    padding: 0.5rem;
+    background-color: #33333300;
+    border-style: none;
+    border-radius: 0.4rem;
+}
+
+.playlist-button:hover {
+    background-color: #2a2a2a87;
+}
+
+.hover-style:hover {
+    color: white;
+}
+
+.right-page {
+    max-width: 100%;
+    width: 100%;
+    max-height: 100%;
+    height: 53.4rem;
+    margin: 1rem;
+    margin-top: 0;
+    margin-left: 0;
+}
+
+.main-page {
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem;
+    background-color: #121212;
+    /* max-width: 100%; */
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+    padding: 1rem 1.2rem;
+
+}
+
+.top-navigation {
+    display: flex;
+    height: 4rem;
+    width: 100%;
+}
+
+.forward-button, .back-button {
+    display: flex;
+    margin: 0.2rem;
+    align-items: center;
+    justify-content: center;
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 2rem;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+.white-text {
+    color: white;
+}
+
+.principal {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.principal-title-text {
+    margin-bottom: 1.2rem;
+}
+
+.principal-playlist-img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 0.2rem;
+}
+
+.principal-playlist-name {
+    display: flex;
+    font-size: small;
+    align-items: center;
+    padding-left: 1rem;
+}
+
+.playlist-principal {
+    display: flex;
+    background-color: #cbcbcb2c;
+    width: 28.7rem;
+    border-radius: 0.2rem;
+}
+
+.playlist-exibition {
+    display: grid;
+    grid-template-columns: 28.7rem 28.7rem 28.7rem;
+    gap: 1rem 1.5rem;
+
+}
+
+.playlist-function {
+    display: flex;
+    justify-content: space-between;
+}
+
+.playlist-title, .show-all {
+    text-decoration: none;
+}
+
+.playlist-title:hover, .show-all:hover {
+    text-decoration: underline;
+}
+
+.music-list {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.playlist-element {
+    margin-top: 1.5rem;
+    background-color: #181818;
+    width: 11.5rem;
+    border-radius: 0.5rem;
+}
+
+.playlist-element:hover {
+    background-color: #303030;
+}
+
+.playlist-element-container {
+    padding: 1rem;
+    height: max-content;
+}
+
+.playlist-element-img {
+    margin-bottom: 1rem;
+    height: 9.4rem;
+}
+
+
+.playlist-element-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+
+}
+
+.playlist-element-desc {
+    display: flex;
+    justify-content: center;
+    font-size: 0.85rem;
+}
