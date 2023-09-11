@@ -282,7 +282,7 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0.5rem;
-    background-color: #121212;
+    background: linear-gradient(to bottom, #5353536f, #121212 20%);
     /* max-width: 100%; */
     width: 100%;
     height: 100%;
@@ -357,6 +357,11 @@ body {
     background-color: rgba(0, 0, 0, 0.7);
 }
 
+.forward-icon, .back-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .white-text {
     color: white;
