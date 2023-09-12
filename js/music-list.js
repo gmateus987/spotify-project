@@ -6,10 +6,10 @@ let musicArray = [
         ["https://dailymix-images.scdn.co/v2/img/ab6761610000e5eb3990d29cef914dc3f5ec43cf/4/pt/default", "Daily Mix 4", "Recayd Mob, Chefin, Veigh e mais"],
         ["https://dailymix-images.scdn.co/v2/img/ab6761610000e5ebf3ed7235eadd0c7062465d73/5/pt/default", "Daily Mix 5", "TRASHXRL, Oto8, NUEKI e mais"],
         ["https://dailymix-images.scdn.co/v2/img/ab6761610000e5ebd1b75375b297088b835d139a/6/pt/default", "Daily Mix 6", "phonk.me, Kordhell, MoonDeity e mais"],
-        ["https://newjams-images.scdn.co/image/ab676477000033ad/dt/v3/discover-weekly/yqRqPZ_5XuNDKYj63rA1c8z-8YnZumw9GVWHwXEMuIIZX5d0RiFuRZ7zOJR0GBdrd7Z6coI_e-zSKXx2rAR37X378OWde3ztE_EQ8_3KcF34jeSW0VMsG2NZHRteskyXBHQJf8Q7xMplQozd1a_cCvXrYOULIYf13z55J7VTp9j6zjxRVIRbZsuuByK5yQ6pfpdWASgJsAB1Al2ooNh3vg==/MjA6NTM6MDFUMzItOTAtMw==", "Descobertas da Semana", "Sua mixtape semanal cheia de novas..."]
+        ["https://newjams-images.scdn.co/image/ab676477000033ad/dt/v3/discover-weekly/yqRqPZ_5XuNDKYj63rA1c8z-8YnZumw9GVWHwXEMuIIZX5d0RiFuRZ7zOJR0GBdrd7Z6coI_e-zSKXx2rAR37X378OWde3ztE_EQ8_3KcF34jeSW0VMsG2NZHRteskyXBHQJf8Q7xMplQozd1a_cCvXrYOULIYf13z55J7VTp9j6zjxRVIRbZsuuByK5yQ6pfpdWASgJsAB1Al2ooNh3vg==/MjA6NTM6MDFUMzItOTAtMw==", "Descobertas da S...", "Sua mixtape semanal cheia de novas..."]
 ]
 
-let htmllist = '<div class="playlist-element"><div class="playlist-element-container"><img src="IMGSRC"class="playlist-element-img" alt=""><div class="playlist-element-text"><div class="playlist-element-title white-text">NAME</div><div class="playlist-element-desc">LISTDESC</div></div></div></div>'
+let htmllist = '<div id="playlist-element" class="playlist-element"><div class="playlist-element-container"><img src="IMGSRC" class="playlist-element-img" alt=""><div id="playlist-play-container" class="playlist-play-container"><div id="playlist-play-box" class="playlist-play-box"><svg role="img" height="24" width="24" aria-hidden="true" viewBox="0 0 24 24" data-encore-id="icon" class="Svg-sc-ytk21e-0 haNxPq"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg></div></div><div class="playlist-element-text"><div class="playlist-element-title white-text">NAME</div><div class="playlist-element-desc">LISTDESC</div></div></div></div>'
 
 
 
@@ -22,3 +22,5 @@ for(let i in musicArray) {
     newMusiclist = newMusiclist.replace('LISTDESC', musicArray[i][2]);
     musiclist.innerHTML += newMusiclist;
 }
+
+
