@@ -11,8 +11,8 @@
     color: white;
     /* border: 1px dashed red; */
     font-family: circular;
-    color: #a7a7a7;
     max-width: 100vw;
+    color: #a7a7a7;
 }
 
 ::-webkit-scrollbar {
@@ -34,6 +34,7 @@ body {
     max-width: 100vw;
     width: 100vw;
     height: fit-content;
+
 }
 
 .main-body {
@@ -68,8 +69,6 @@ body {
     height: max-content;
 }
 
-
-
 .library {
     margin: 0.5rem;
     margin-top: 0rem;
@@ -78,7 +77,7 @@ body {
     height: 45rem;
     background-color: #121212;
     border-radius: 0.5rem;
-}
+}    
 
 
 .nav-text {
@@ -89,7 +88,7 @@ body {
     align-items: center;
     text-align: center;
 
-}
+}    
 
 .link-ref {
     display: flex;
@@ -98,15 +97,15 @@ body {
     text-decoration: none;
     align-items: center;
     fill: currentColor;
-    transition: color fill 0.5s ease-out 70ms;
-    
+    color: currentColor;
+    transition: 0.3s ease-in-out;
 }
+
 
 .link-ref:hover {
-    fill: white;
     color: white;
+    fill: white;
 }
-
 
 .lib-top {
     display: flex;
@@ -120,39 +119,71 @@ body {
 .lib-button {
     display: flex;
     background-color: #33333300;
-    width: max-content;
-    height: max-content;
+    justify-content: center;
+    align-items: center;
     border: none;
     font-weight: bold;
     font-size: medium;
     margin: 0.8rem;
     margin-top: 1rem;
     fill: currentColor;
+    transition: 0.3s ease-in-out;
 }
 
+.lib-button:hover {
+    background-color: #2a2a2a8a;
+    border-radius: 50%;
+}
+
+.bi-plus-lg{
+    display: flex;
+    width: 1.3rem;
+    height: 1.3rem;
+    margin: 0.3rem;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.bi-arrow-right{
+    height: 1.3rem;
+    width: 1.3rem;
+    margin: 0.3rem;
+    justify-content: center;
+    align-items: center;
+}
+
+
 .plus-button:hover, .arrow-button:hover {
-    background-color: #2a2a2a87;
-    border-radius: 2rem;
-    fill: rgba(255, 255, 255, 0.823);
+    fill: rgba(255, 255, 255, 0.918);
 }
 
 .lib-icon {
-    padding-right: 1rem;
+    margin-right: 1rem;
 }
 
 .yours-lib {
     padding-left: 1rem;
+    width: fit-content;
 }
 
 .func-button {
+    width: fit-content;
+    height: fit-content;
     display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    width: max-content;
+    justify-content: center;
+    align-items: center;
 }
+
 
 .func-container {
     margin-right: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    width: max-content;
+    height: fit-content;
 }
 
 
@@ -317,6 +348,7 @@ body {
     background: linear-gradient(to bottom, #5353536f, #121212 20%);
     max-width: 100vw;
     width: 100%;
+    height: 52.5rem;
     border-radius: 0.5rem;
     padding: 1rem 1.2rem;
 
@@ -435,6 +467,7 @@ body {
     background-color: #cbcbcb1d;
     width: 28.7rem;
     border-radius: 0.2rem;
+    transition: background-color 0.3s ease-in-out;
 }
 
 .playlist-principal:hover {
@@ -448,6 +481,7 @@ body {
     width: 28.7rem;
     height: 5rem;
     opacity: 0%;
+    transition: opacity 0.3s ease-in-out;
 }
 
 .principal-play-container:hover {
@@ -504,6 +538,7 @@ body {
     background-color: #181818;
     width: 11.5rem;
     border-radius: 0.5rem;
+    transition: background-color 0.3s ease-in-out;
 }
 
 .playlist-element:hover {
@@ -562,9 +597,8 @@ body {
     height: 100%;
     justify-content: flex-end;
     align-items: flex-end;
-    
     opacity: 0%;
-    
+    transition: opacity 0.3s ease-in-out;
 }
 
 .playlist-play-container:hover {
