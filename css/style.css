@@ -33,6 +33,7 @@
 body {
     max-width: 100vw;
     width: 100vw;
+    height: fit-content;
 }
 
 .main-body {
@@ -62,8 +63,9 @@ body {
 
 .nav-elements {
     padding: 0.8rem;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
     height: max-content;
-
 }
 
 
@@ -80,10 +82,13 @@ body {
 
 
 .nav-text {
-    padding-left: 1rem;
+    display: flex;
     font-weight: bold;
     height: 100%;
     padding-top: 0.2rem;
+    align-items: center;
+    text-align: center;
+
 }
 
 .link-ref {
@@ -92,8 +97,15 @@ body {
     height: 100%;
     text-decoration: none;
     align-items: center;
+    fill: currentColor;
+    transition: color fill 0.5s ease-out 70ms;
+    
 }
 
+.link-ref:hover {
+    fill: white;
+    color: white;
+}
 
 
 .lib-top {
@@ -108,18 +120,20 @@ body {
 .lib-button {
     display: flex;
     background-color: #33333300;
-    width: fit-content;
-    height: fit-content;
+    width: max-content;
+    height: max-content;
     border: none;
     font-weight: bold;
     font-size: medium;
-    margin: 0.68rem;
-    padding: 0.2rem;
+    margin: 0.8rem;
+    margin-top: 1rem;
+    fill: currentColor;
 }
 
 .plus-button:hover, .arrow-button:hover {
     background-color: #2a2a2a87;
     border-radius: 2rem;
+    fill: rgba(255, 255, 255, 0.823);
 }
 
 .lib-icon {
@@ -127,9 +141,8 @@ body {
 }
 
 .yours-lib {
-    padding-right: 7rem;
+    padding-left: 1rem;
 }
-
 
 .func-button {
     display: flex;
@@ -187,10 +200,12 @@ body {
     background-color: #33333300;
     border-style: none;
     border-radius: 2rem;
+    fill: currentColor;
 }
 
 .search-bttn:hover {
     background-color: #ffffff1a;
+    fill: white;
 }
 
 
@@ -209,6 +224,16 @@ body {
     background-color: #33333300;
     border-style: none;
     flex-shrink: 0;
+    fill: currentColor;
+}
+
+.recent-arrow {
+    margin-left: 0.5rem;
+}
+
+.recent-bttn:hover {
+    color: white;
+    fill: white;
 }
 
 .liked-songs {
@@ -341,6 +366,7 @@ body {
 .profile-photo-container {
     width: 1.5rem;
     height: 1.5rem;
+    margin-right: 1rem;
 }
 
 .profile-photo {
@@ -371,13 +397,18 @@ body {
 }
 
 .white-text {
+    width: 100%;
     color: white;
+    fill: white;
 }
 
 .principal {
     display: flex;
     flex-direction: column;
     gap: 2.5rem;
+    max-height: 46.8rem;
+    height: 100%;
+    overflow-y: scroll;
 }
 
 .principal-title-text {
@@ -392,6 +423,7 @@ body {
 
 .principal-playlist-name {
     display: flex;
+    width: 80%;
     font-size: small;
     align-items: center;
     padding-left: 1rem;
@@ -399,10 +431,42 @@ body {
 
 .playlist-principal {
     display: flex;
-    background-color: #cbcbcb2c;
+    flex-direction: row;
+    background-color: #cbcbcb1d;
     width: 28.7rem;
     border-radius: 0.2rem;
 }
+
+.playlist-principal:hover {
+    background-color: #cbcbcb3e;
+}
+
+.principal-play-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 28.7rem;
+    height: 5rem;
+    opacity: 0%;
+}
+
+.principal-play-container:hover {
+    opacity: 100%;
+}
+
+.principal-play-box {
+    position: relative;
+    z-index: 12;
+    display: flex;
+    background-color: #1ed760;
+    border-radius: 100rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+}
+
 
 .playlist-exibition {
     display: grid;
@@ -411,12 +475,18 @@ body {
 
 }
 
+.playlist-section {
+    margin-bottom: 2.6rem;
+}
+
 .playlist-function {
     display: flex;
+    margin-right: 2rem;
     justify-content: space-between;
 }
 
 .playlist-title, .show-all {
+    width: fit-content;
     text-decoration: none;
 }
 
@@ -446,8 +516,8 @@ body {
 }
 
 .playlist-element-img {
-    position: absolute;
-    /* z-index: 8; */
+    position: relative;
+    z-index: 1;
     margin-bottom: 1rem;
     height: 9.4rem;
 }
@@ -455,7 +525,7 @@ body {
 
 .playlist-element-title {
     position: relative;
-    z-index: 12;
+    z-index: 2;
     display: flex;
     align-items: center;
     margin-bottom: 0.5rem;
@@ -465,15 +535,15 @@ body {
 .playlist-element-desc {
     position: relative;
     height: fit-content;
-    z-index: 12;
+    z-index: 2;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     font-size: 0.85rem;
 }
 
 .playlist-play-box {
     position: relative;
-    z-index: 12;
+    z-index: 2;
     display: flex;
     background-color: #1ed760;
     border-radius: 100rem;
@@ -486,10 +556,10 @@ body {
 
 .playlist-play-container {
     position: relative;
-    z-index: 15;
+    z-index: 2;
     display: flex;
     width: 100%;
-    height: 11rem;
+    height: 100%;
     justify-content: flex-end;
     align-items: flex-end;
     

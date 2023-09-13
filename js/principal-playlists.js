@@ -21,7 +21,7 @@ let playlisttop = [
 
 ]
 let htmlCode = 
-    '<div class="playlist-principal"><img src="IMGSRC" class="principal-playlist-img" alt="principal-img"><div class="principal-playlist-name"> <h3 class="white-text"> NAME </h3></div></div>'
+    '<div class="playlist-principal"><img src="IMGSRC" class="principal-playlist-img" alt="principal-img"><div class="principal-playlist-name"> <h3 class="white-text"> NAME </h3></div><div id="principal-play-container" class="principal-play-container"><div id="principal-play-box" class="principal-play-box"><svg role="img" height="24" width="24" aria-hidden="true" viewBox="0 0 24 24" data-encore-id="icon" class="Svg-sc-ytk21e-0 haNxPq"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg></div></div></div>'
 
 let playlistContainer = document.getElementById('playlist-exibition');
 
