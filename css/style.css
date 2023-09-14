@@ -13,6 +13,7 @@
     font-family: circular;
     max-width: 100vw;
     color: #a7a7a7;
+    white-space: nowrap;
 }
 
 ::-webkit-scrollbar {
@@ -566,7 +567,7 @@ body {
     flex-direction: column;
     margin: 1rem;
     height: max-content;
-
+}
 
 .playlist-element-container:hover {
     cursor: pointer;
@@ -582,7 +583,6 @@ body {
 .playlist-element-title {
     flex: 1;
     text-overflow: ellipsis;
-    white-space: nowrap;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -593,6 +593,7 @@ body {
 .playlist-element-desc {
     height: fit-content;
     flex: 1;
+    white-space: break-spaces;
     display: flex;
     justify-content: flex-start;
     font-size: 0.85rem;
@@ -628,7 +629,7 @@ body {
     position: absolute;
     display: flex;
     width: 184px;
-    height: 300px;
+    height: 265px;
     opacity: 0;
     transition: all ease 0.4s;
 
@@ -670,32 +671,28 @@ body {
     align-items: center;
     text-align: center;
     margin-left: 1rem;
-    width: 1000px;
-    height: 1000px;
-    background-color: orange;
 
 }
 
 .current-music-img {
     display: flex;
-    width: 10px;
-    height: 10px;
+    width: 60px;
+    height: 60px;
 }
 
 .current-name-container {
     display: flex;
-    flex: 1;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     margin-left: 20px;
+    width: 200px;
 }
 
 .current-name {
     font-size: 15px;
 }
 
-.current-artist {
+.current-desc-container {
     font-size: 12px;
-}
 }
