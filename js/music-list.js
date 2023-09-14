@@ -6,11 +6,14 @@ let firstmusicArray = [
         ["./images/playlist-images/daily-mix4.svg", "Daily Mix 4", "Recayd Mob, Chefin, Veigh e mais"],
         ["./images/playlist-images/daily-mix5.svg", "Daily Mix 5", "TRASHXRL, Oto8, NUEKI e mais"],
         ["./images/playlist-images/daily-mix6.svg", "Daily Mix 6", "phonk.me, Kordhell, MoonDeity e mais"],
-        ["./images/playlist-images/descoberta.svg", "Descobertas da S...", "Sua mixtape semanal cheia de novas..."]
+        ["./images/playlist-images/descoberta.svg", "Descobertas da Semana", "Sua mixtape semanal cheia de novas..."]
 ]
 
-let htmllist = '<div id="playlist-element" class="playlist-element"><div class="playlist-element-container"><img src="IMGSRC" class="playlist-element-img" alt=""><div id="playlist-play-container" class="playlist-play-container"><div id="playlist-play-box" class="playlist-play-box"><svg role="img" height="24" width="24" aria-hidden="true" viewBox="0 0 24 24" data-encore-id="icon" class="Svg-sc-ytk21e-0 haNxPq"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg></div></div><div class="playlist-element-text"><div class="playlist-element-title white-text">NAME</div><div class="playlist-element-desc">LISTDESC</div></div></div></div>'
+let htmllist = '<div id="playlist-element" class="playlist-element"><div class="playlist-element-container"><div class="playlist-element-img"><img src="IMGSRC" class="playlist-element-img" alt=""></div><div id="playlist-play-container" class="playlist-play-container"><div id="playlist-play-box" class="playlist-play-box"><svg role="img" height="24" width="24" aria-hidden="true" viewBox="0 0 24 24" data-encore-id="icon" class="Svg-sc-ytk21e-0 haNxPq"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg></div></div><div class="playlist-element-text"><div class="playlist-element-title white-text">NAME</div><div class="playlist-element-desc">LISTDESC</div></div></div></div>'
 
+/*
+<div id="playlist-element" class="playlist-element"><div class="playlist-element-container"><div class="playlist-element-img"><img src="IMGSRC" class="playlist-element-img" alt=""></div><div id="playlist-play-container" class="playlist-play-container"><div id="playlist-play-box" class="playlist-play-box"><svg role="img" height="24" width="24" aria-hidden="true" viewBox="0 0 24 24" data-encore-id="icon" class="Svg-sc-ytk21e-0 haNxPq"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg></div></div><div class="playlist-element-text"><div class="playlist-element-title white-text">NAME</div><div class="playlist-element-desc">LISTDESC</div></div></div></div>
+*/
 
 
 let firstmusiclist = document.getElementById('first-music-list');
