@@ -33,6 +33,8 @@
 
 body {
     max-width: 100vw;
+    max-height: 100vh;
+    height: 100vh;
     width: 100vw;
     height: fit-content;
 
@@ -43,15 +45,17 @@ body {
     flex-direction: column;
     background-color: black;
     max-width: 100vw;
-    width: 100%;
+    max-height: 100vh;
+    width: 100vw;
     height: 100vh;
 }
 
 .general-page {
     display: flex;
     max-width: 100vw;
-    width: 100%;
-    height: 100%;
+    max-height: 100vh;
+    width: 100vw;
+    height: calc(100vh - 100px);
 }
 
 .navigation-container {
@@ -74,6 +78,7 @@ body {
     padding-top: 0.4rem;
     padding-bottom: 0.4rem;
     height: max-content;
+    width: fit-content;
 }
 
 .library {
@@ -81,10 +86,10 @@ body {
     margin-top: 0rem;
     margin-right: 0rem;
     width: 100%;
-    height: 45rem;
+    height: calc(100% - 128px);
     background-color: #121212;
     border-radius: 0.5rem;
-}    
+}
 
 
 .nav-text {
@@ -95,7 +100,7 @@ body {
     align-items: center;
     text-align: center;
 
-}    
+}
 
 .link-ref {
     display: flex;
@@ -137,12 +142,12 @@ body {
     transition: 0.3s ease-in-out;
 }
 
-.lib-button:hover {
+.lib-button-hover:hover {
     background-color: #2a2a2a8a;
     border-radius: 50%;
 }
 
-.bi-plus-lg{
+.bi-plus-lg {
     display: flex;
     width: 1.3rem;
     height: 1.3rem;
@@ -152,7 +157,7 @@ body {
 
 }
 
-.bi-arrow-right{
+.bi-arrow-right {
     height: 1.3rem;
     width: 1.3rem;
     margin: 0.3rem;
@@ -161,7 +166,8 @@ body {
 }
 
 
-.plus-button:hover, .arrow-button:hover {
+.plus-button:hover,
+.arrow-button:hover {
     fill: rgba(255, 255, 255, 0.918);
 }
 
@@ -196,12 +202,13 @@ body {
 
 
 .left-page {
-    height: max-content;
+    height: 100%;
     width: 26rem;
     margin-right: 0.5rem;
 }
 
 .lib-filter {
+    width: fit-content;
     display: flex;
     margin-left: 1rem;
     margin-top: 0.3rem;
@@ -239,6 +246,7 @@ body {
     border-style: none;
     border-radius: 2rem;
     fill: currentColor;
+    cursor: pointer;
 }
 
 .search-bttn:hover {
@@ -340,9 +348,9 @@ body {
 }
 
 .right-page {
+    flex: 1;
     max-width: 100%;
     max-height: 100%;
-    height: 53.4rem;
     margin: 0rem 1rem 0rem 0rem;
 
 }
@@ -354,7 +362,7 @@ body {
     background: linear-gradient(to bottom, #5353536f, #121212 20%);
     max-width: 100%;
     width: max-content;
-    height: 52.5rem;
+    height: calc(100% - 10px);
     border-radius: 0.5rem;
     padding: 1rem 1rem 1rem 1rem;
 
@@ -372,8 +380,9 @@ body {
     display: flex;
     margin-bottom: 2rem;
     gap: 0.5rem;
-    
+
 }
+
 .install-app {
     display: flex;
     align-items: center;
@@ -401,10 +410,21 @@ body {
     border-radius: 31rem;
 }
 
-.premium-subscribe:hover, .install-app-container:hover, .profile-photo-container:hover {
+.premium-subscribe:hover,
+.install-app-container:hover,
+.profile-photo-container:hover, .notifications:hover {
     transform: scale(1.05);
 }
 
+.notifications {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
 
 .profile-photo-container {
     width: 1.5rem;
@@ -423,7 +443,8 @@ body {
     gap: 1rem;
 }
 
-.forward-button, .back-button {
+.forward-button,
+.back-button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -433,7 +454,8 @@ body {
     background-color: rgba(0, 0, 0, 0.7);
 }
 
-.forward-icon, .back-icon {
+.forward-icon,
+.back-icon {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -536,12 +558,14 @@ body {
     justify-content: space-between;
 }
 
-.playlist-title, .show-all {
+.playlist-title,
+.show-all {
     width: fit-content;
     text-decoration: none;
 }
 
-.playlist-title:hover, .show-all:hover {
+.playlist-title:hover,
+.show-all:hover {
     text-decoration: underline;
 }
 
@@ -612,7 +636,7 @@ body {
     margin-right: 23px;
 }
 
-.playlist-play-box{
+.playlist-play-box {
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -620,7 +644,7 @@ body {
     width: 100%;
 }
 
-.playlist-play:hover{
+.playlist-play:hover {
     transform: scale(1.1);
 }
 
@@ -639,7 +663,7 @@ body {
 }
 
 .playlist-play-container:hover {
-    opacity: 1;    
+    opacity: 1;
     transform: translateY(-15px);
 }
 
@@ -656,12 +680,14 @@ body {
     width: 100%;
     height: 100px;
     background-color: black;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .current-music-container {
     display: flex;
     flex-direction: row;
-    width: 100px;
+    width: max-content;
     height: 100%;
 }
 
@@ -686,7 +712,7 @@ body {
     justify-content: center;
     align-items: flex-start;
     margin-left: 20px;
-    width: 200px;
+    width: fit-content;
 }
 
 .current-name {
@@ -699,41 +725,222 @@ body {
 
 .like-button-container {
     display: flex;
+    position: relative;
     margin-left: 15px;
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.like-button {
+    font-size: xx-large;
+    position: relative;
+    width: 20px;
+    height: 40px;
+    cursor: pointer;
+}
+
+ion-icon.active {
+    animation: like 0.5s 1;
+    fill: #1ed760;
+    stroke: none;
+}
+
+ion-icon {
+    fill: transparent;
+    stroke: dimgray;
+    stroke-width: 30;
+    transition: all 0.5s;
+}
+
+@-webkit-keyframes link {
+    0% {transform: scale(1);}
+    90% {transform: scale(1.2);}
+    100% {transform: scale(1.1);}
+}
+
+.player {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.like-button {
-    width: 50px;
-    height: 50px;
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-    outline: none;
-    position: relative;
+
+
+.player-buttons {
+    display: flex;
+    gap: 20px;
+    height: 50%;
 }
 
-.like-button div {
-    width: 100%;
-    height: 100%;
-    background-color: transparent;
+.white-fillcolor:hover {
+    color: white;
+    fill: white;
+}
+
+.music-play-container{
+    display: flex;
+    width: 35px; 
+    height: 35px;
     border-radius: 50%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: background-color 0.2s, transform 0.2s;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
 }
 
-.like-button .heart {
-    background-color: #ffffff;
-    clip-path: url(../images/icon-coração.svg);
-    
+.music-play-container:hover{
+    transform: scale(1.1);
 }
 
-.like-button.liked .heart {
-    background-color: #1ed760;
+.music-play-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.music-random-container {
+    display: flex;
+}
+
+.music-skipback-container {
+    display: flex;
+}
+
+.music-skipforward-container {
+    display: flex;
+}
+
+.music-repeat-container {
+    display: flex;
+}
+
+.play-bar {
+    display: flex;
+    margin-top: 1.3rem;
+    gap: 6px;
+    height: 50%;
+}
+
+.music-time-text {
+    font-size: 13px;
+}
+
+.music-bar {
+    display: block;
+    appearance: none;
+    width: 600px;
+    height: 4px;
+    border-radius: 5px;
+    background-color: #a7a7a786;
+}
+
+
+.music-bar::-webkit-slider-thumb {
+    appearance: none;
+    display: block;
+    background-color: white;
+    width: 12px;
+    height: 12px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.volume-functions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding-right: 20px;
+}
+
+.volume-bar {
+    display: block;
+    appearance: none;
+    width: 120px;
+    height: 4px;
+    border-radius: 5px;
+    background-color: #a7a7a786;
+}
+
+.volume-bar::-webkit-slider-thumb {
+    appearance: none;
+    display: block;
+    background-color: white;
+    width: 12px;
+    height: 12px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.playing-now-container, .row, .device-conect, .volume, .volume-input, .picture-in-picture {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1280px) {
+
+    .left-page {
+        width: fit-content;
+        height: 100%;
+    }
+
+    .navigation-container {
+        width: 300px;
+    }
+
+    .library {
+        width: 300px;
+        height: calc(100% - 128px);
+    }
+
+    .main-page {
+        height: calc(100vh - 110px);
+        width: 100%;
+    }
+
+    .right-page {
+        flex: 1;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .left-overflow {
+        height: 75%;
+    }
+
+    .music-player {
+        width: 100vw;
+        height: 100px;
+    }
+
+    .music-bar {
+        width: 350px;
+    }
+
+    .playlist-principal {
+        flex: 1;
+        width: 280px;
+    }
+
+    .playlist-exibition {
+        gap: 12px;
+    }
+
+    .principal-play-container {
+
+        flex: 1;
+    }
+
+    .playlist-exibition {
+        grid-template-columns: 280px 280px;
+    }
+
+    .music-list {
+        display: grid;
+        grid-template-columns: repeat(3, 185px);
+    }
+
 }
