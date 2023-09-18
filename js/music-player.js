@@ -5,12 +5,12 @@ icon.onclick = function(){
 }
 
 // PLAYER
-let currentTime = document.getElementById('label-time');
-let rangeInput = document.getElementById('music-time');
+let currentTime = document.querySelector('#label-time');
+let rangeValue = document.querySelector('#music-time');
 
-currentTime.innerText = rangeInput.value;
+currentTime.addEventListener("#label-time", function(){
+    rangeValue.textContent = this.value;
+})
 
-rangeInput.oninput = function(){
-    currentTime.innerHTML = parseInt(this.value).to
-}
+
   
